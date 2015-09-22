@@ -383,8 +383,14 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+.img-gallery{
+margin:20px auto;
+width:900px;
+height:640px;
+position:relative;
+}
 
-img-gallery {
+aimg-gallery {
      float: left;
     width: 25%;
     height: 25%;
@@ -395,7 +401,7 @@ img-gallery {
     box-sizing: border-box;
 }
 
-img-gallery:after {
+aimg-gallery:after {
     display: block;
     position: absolute;
     width: 100%;
@@ -407,7 +413,7 @@ img-gallery:after {
     opacity: 0.5;
 }
 
-img-gallery:focus img{
+aimg-gallery:focus img{
     width: 250%; /* we increased an image to this size */
     height: 250%;
     position: absolute;
@@ -428,17 +434,17 @@ img-gallery:focus img{
     cursor: default;
 }
 
-img-gallery:nth-child(4n+4) img, a:nth-child(4n+3) img{
+aimg-gallery:nth-child(4n+4) img, a:nth-child(4n+3) img{
     right: 0;
 } /* every fourth element starting with 3rd and 4th will be enlarged from the right border of browser window */
 
-img-gallery:nth-child(n+9) img{
+aimg-gallery:nth-child(n+9) img{
     bottom: 0;
 } /* all elements, starting with the ninth will begin to enlarge upwards */
 
 .closed{
     display: none;
 }
-img-gallery:focus~.closed{
+aimg-gallery:focus~.closed{
     display: block;
 }
