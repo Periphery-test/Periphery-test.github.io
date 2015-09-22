@@ -432,6 +432,13 @@ img-gallery:nth-child(4n+4) img, a:nth-child(4n+3) img{
     right: 0;
 } /* every fourth element starting with 3rd and 4th will be enlarged from the right border of browser window */
 
-a:nth-child(n+9) img{
+img-gallery:nth-child(n+9) img{
     bottom: 0;
 } /* all elements, starting with the ninth will begin to enlarge upwards */
+
+.closed{
+    display: none;
+}
+img-gallery:focus~.closed{
+    display: block;
+}
